@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## `It contains`
-## React redux for state management.
+## React redux for state management. It also contains React Router for Routing
 
 ## Available Scripts
 
