@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `It contains`
+## React redux for state management.
 
 ## Available Scripts
 
