@@ -10,22 +10,24 @@ function CreateArea(props) {
     content: ""
   });
 
-  const [isClicked, setIsCLicked] = useState(false) //before we click on title input...
+  const [isClicked, setIsCLicked] = useState(false); //before we click on title input...
 
   // deconstructin note object...
   const { title, content } = note;
 
+
   function handleChange(evt) {
     const { name, value, ...otherproperties } = evt.target; //otherproperties is added for experimental purposes.
   // the rest of the object is not actually needed...
-    console.log(evt.target, otherproperties);
+    // console.log(evt.target, otherproperties);
 
-    setNote(() => {
-      return {
-        ...note, //returns the old object
-        [name]: value //updates the changed field
-      };
-    });
+      // only happens when we are not in the edit mode...
+      setNote(() => {
+        return {
+          ...note, //returns the old object
+          [name]: value //updates the changed field
+        };
+      });
   }
 
   function stopRefresh(evt) {
